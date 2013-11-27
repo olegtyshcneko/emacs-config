@@ -1,0 +1,1 @@
+("f:/Files/My Documents/Programming/Clojure/clojure-fun/" "~/.emacs.d/")

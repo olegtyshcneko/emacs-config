@@ -1,0 +1,1 @@
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8 data ("f:/Files/My Documents/Programming/Clojure/clojure-fun/" (".gitignore" "src/clojure_fun/core.clj~" "project.clj" "src/clojure_fun/core.clj") "c:/Users/Tyshchenko/.emacs.d/" (".gitignore")))

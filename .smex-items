@@ -1,0 +1,37 @@
+
+;; ----- smex-history -----
+(
+ cider-jack-in
+ package-list-packages
+ delete-region
+ set-default-font
+ auto-insert
+ package-refresh-contents
+ paredit-mode
+)
+
+;; ----- smex-data -----
+(
+ (package-list-packages . 9)
+ (paredit-mode . 4)
+ (clojure-mode . 1)
+ (nrepl . 1)
+ (undo . 3)
+ (text-mode . 1)
+ (package-refresh-contents . 3)
+ (insert-buffer . 2)
+ (self-insert-command . 1)
+ (replace-string . 2)
+ (package-install . 3)
+ (nrepl-jack-in . 3)
+ (nrepl-eval-last-expression . 1)
+ (describe-font . 2)
+ (set-default-font . 13)
+ (linum-mode . 2)
+ (bs-show . 1)
+ (cider . 1)
+ (cider-mode . 3)
+ (auto-insert . 1)
+ (cider-jack-in . 5)
+ (delete-region . 1)
+)
