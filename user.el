@@ -6,6 +6,8 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
+;disable backup and autosave
+(setq backup-inhibited t)
 (setq auto-save-default nil)
 
 (set-default-font "Monaco-13")

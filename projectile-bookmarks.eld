@@ -1,1 +1,1 @@
-("f:/Files/My Documents/Programming/Clojure/clojure-fun/" "~/.emacs.d/")
+("f:/Files/My Documents/Programming/Clojure/simple-server/" "f:/Files/My Documents/Programming/Clojure/clojure-fun2/" "~/.emacs.d/" "f:/Files/My Documents/Programming/Clojure/clojure-fun/" "f:/Files/My Documents/Programming/Clojure/sedgwick-algo/")
