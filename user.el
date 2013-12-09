@@ -39,7 +39,7 @@
 
 (require 'yasnippet)
 (yas-global-mode 1)
-(yas/load-directory "~/.emacs.d/elpa/yasnippet-0.8.0/snippets")
+(yas/load-directory "~/.emacs.d/elpa/yasnippet-yasnippet-20131203.1520/snippets")
 
 (projectile-global-mode 1)
 
