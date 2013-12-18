@@ -29,6 +29,8 @@
       '(f("files" "^\\*scratch\\*" nil nil bs-visits-non-file bs-sort-buffer-interns-are-last)))
  
 (global-set-key (kbd "<f2>") 'bs-show)
+(global-set-key (kbd "<home>") 'beginning-of-line)
+(global-set-key (kbd "<end>") 'end-of-line)
 
 (require 'auto-complete-config)
 (ac-config-default)
@@ -39,7 +41,7 @@
 
 (require 'yasnippet)
 (yas-global-mode 1)
-(yas/load-directory "~/.emacs.d/elpa/yasnippet-yasnippet-20131203.1520/snippets")
+(yas/load-directory "~/.emacs.d/elpa/yasnippet-20131203.1520/snippets")
 
 (projectile-global-mode 1)
 
