@@ -1,5 +1,4 @@
 ;;Oleg Tyshchenko Emacs Config file
-
 (setq show-paren-style 'expression)
 (show-paren-mode 2)
 
@@ -14,6 +13,11 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/plugins")
+
+(require 'autopair)
+(autopair-global-mode 1)
+
+(add-hook 'find-file-hook 'auto-auto-indent-mode) ;;hook to start auto-indent automatically
 
 (require 'linum+)
 (setq linum-format "%d ")
@@ -73,8 +77,7 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (defun after-js2-mode () 
-  (auto-auto-indent-mode)
-  (autopair-mode))
+  (auto-auto-indent-mode))
 (add-hook 'js2-mode-hook 'after-js2-mode)
 
 (require 'emmet-mode)
@@ -100,8 +103,7 @@
 
 (defun after-css-mode ()
   (emmet-mode)
-  (auto-auto-indent-mode)
-  (autopair-mode))
+  (auto-auto-indent-mode))
 
 (add-hook 'html-mode-hook 'after-html-mode)
 (add-hook 'css-mode-hook 'after-css-mode)
