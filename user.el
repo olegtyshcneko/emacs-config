@@ -90,6 +90,16 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
+(add-to-list 'auto-mode-alist '("\\.cl\\'" . common-lisp-mode))
+
+(defun after-cl-mode ()
+  (slime-mode)
+  (auto-auto-indent-mode)
+  (autopair-mode)
+  (paredit-mode))
+
+(add-hook 'lisp-mode-hook 'after-cl-mode)
+
 (defun after-web-mode () 
   (emmet-mode)
   (define-key web-mode-map (kbd "TAB") 'emmet-expand-yas)
@@ -107,3 +117,9 @@
 
 (add-hook 'html-mode-hook 'after-html-mode)
 (add-hook 'css-mode-hook 'after-css-mode)
+
+;;Slime configuration:
+(setq inferior-lisp-program "/usr/local/bin/clisp")
+(require 'slime)
+(slime-setup)
+;;----
