@@ -17,6 +17,9 @@ Thumbs.db
 auto-save-list
 tramp
 .\#*
+ac-comphist.dat
+projectile-bookmarks.eld
+projectile.cache
 
 # Org-mode
 .org-id-locations
