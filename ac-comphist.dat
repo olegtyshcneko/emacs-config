@@ -1,40 +1,58 @@
-((("slime-setup" .
-   [0 0 0 0 0 0 0 0 0 1 0])
-  ("require" .
-   [0 0 0 1 0 0 0])
-  ("inferior-lisp-program" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setq" .
-   [1 0 0 0])
-  ("after-cl-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("add-hook" .
-   [0 0 0 0 0 0 0 1])
-  ("paredit-mode" .
-   [0 0 0 0 1 0 0 0 0 0 0 0])
-  ("autopair-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("auto-auto-indent-mode" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("common-lisp-mode" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1])
-  ("slime" .
-   [0 0 1 0 1])
-  ("auto-mode-alist" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("add-to-" .
-   [0 0 0 0 0 0 1])
-  ("defparameter" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("*big*" .
-   [1 0 0 0 2])
-  ("*small*" .
-   [0 0 0 2 0 1 0])
-  ("defun" .
-   [5 0 0 0 0])
-  ("guess-my-number" .
-   [0 0 3 2 0 0 0 0 0 0 0 0 0 0 0])
+((("update-in" .
+   [0 0 0 0 0 0 0 0 1])
+  ("result" .
+   [3 0 0 0 0 0])
+  ("sum" .
+   [1 0 0])
+  ("find-increasing" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("temp" .
+   [7 0 0 0])
+  ("recur" .
+   [7 0 0 0 0])
+  ("second" .
+   [0 0 0 0 1 0])
+  ("false" .
+   [2 0 0 0 0])
+  ("reduce" .
+   [0 0 0 0 0 1])
+  ("slime-mode" .
+   [1 0 0 0 0 0 0 0 0 0])
   ("setf" .
    [3 0 0 0])
-  ("slime-mode" .
-   [1 0 0 0 0 0 0 0 0 0])))
+  ("guess-my-number" .
+   [0 0 3 2 0 0 0 0 0 0 0 0 0 0 0])
+  ("defun" .
+   [5 0 0 0 0])
+  ("*small*" .
+   [0 0 0 2 0 1 0])
+  ("*big*" .
+   [1 0 0 0 2])
+  ("defparameter" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("add-to-" .
+   [0 0 0 0 0 0 1])
+  ("auto-mode-alist" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("slime" .
+   [0 0 1 0 1])
+  ("common-lisp-mode" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1])
+  ("auto-auto-indent-mode" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("autopair-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("paredit-mode" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("add-hook" .
+   [0 0 0 0 0 0 0 1])
+  ("after-cl-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("setq" .
+   [1 0 0 0])
+  ("inferior-lisp-program" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 0 1 0 0 0])
+  ("slime-setup" .
+   [0 0 0 0 0 0 0 0 0 1 0])))

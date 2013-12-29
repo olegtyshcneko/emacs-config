@@ -10,7 +10,7 @@
 (setq backup-inhibited t)
 (setq auto-save-default nil)
 
-(set-default-font "Monaco-13")
+(set-default-font "Monaco-12")
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/plugins")
@@ -50,7 +50,7 @@
 (color-theme-initialize)
 (setq color-theme-is-global t)
 
-(color-theme-classic)
+(color-theme-clarity)
 
 (require 'litable)
 
