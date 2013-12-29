@@ -1,0 +1,10 @@
+Downloading/unpacking jedi
+  Running setup.py egg_info for package jedi
+    
+    warning: no previously-included files matching '*.pyc' found under directory '*'
+Installing collected packages: jedi
+  Running setup.py install for jedi
+    
+    warning: no previously-included files matching '*.pyc' found under directory '*'
+Successfully installed jedi
+Cleaning up...

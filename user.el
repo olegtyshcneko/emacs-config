@@ -71,6 +71,7 @@
 
 (require 'psvn)
 
+;;HTML and Javascript config:
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
@@ -90,16 +91,6 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
-(add-to-list 'auto-mode-alist '("\\.cl\\'" . common-lisp-mode))
-
-(defun after-cl-mode ()
-  (slime-mode)
-  (auto-auto-indent-mode)
-  (autopair-mode)
-  (paredit-mode))
-
-(add-hook 'lisp-mode-hook 'after-cl-mode)
-
 (defun after-web-mode () 
   (emmet-mode)
   (define-key web-mode-map (kbd "TAB") 'emmet-expand-yas)
@@ -117,9 +108,33 @@
 
 (add-hook 'html-mode-hook 'after-html-mode)
 (add-hook 'css-mode-hook 'after-css-mode)
+;;---------------------
 
-;;Slime configuration:
+;;Python configuration:
+(defun after-python-mode ()
+  (auto-complete-mode)  
+  (jedi:ac-setup)
+  (jedi-mode)
+  (autopair-mode)
+  (define-key python-mode-map (kbd "RET") 'newline-and-indent))
+
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+
+(add-hook 'python-mode-hook 'after-python-mode)
+;;------------------------------------
+
+;;Slime and common lisp configuration:
+(add-hook 'lisp-mode-hook 'after-cl-mode)
+(add-to-list 'auto-mode-alist '("\\.cl\\'" . common-lisp-mode))
+
+(defun after-cl-mode ()
+  (slime-mode)
+  (auto-auto-indent-mode)
+  (autopair-mode)
+  (paredit-mode))
+
 (setq inferior-lisp-program "/usr/local/bin/clisp")
 (require 'slime)
 (slime-setup)
-;;----
+;;-----------------------------------------------------------------
