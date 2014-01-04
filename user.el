@@ -1,4 +1,4 @@
-;;Oleg Tyshchenko Emacs Config file
+;Oleg Tyshchenko Emacs Config file
 
 (setq show-paren-style 'expression)
 (show-paren-mode 2)
@@ -10,7 +10,7 @@
 (setq backup-inhibited t)
 (setq auto-save-default nil)
 
-(set-default-font "Monaco-12")
+(set-default-font "Monaco-10")
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/plugins")
@@ -111,12 +111,14 @@
 ;;---------------------
 
 ;;Python configuration:
+(require 'flymake-python-pyflakes)
 (defun after-python-mode ()
   (auto-complete-mode)  
   (jedi:ac-setup)
   (jedi-mode)
-  (autopair-mode)
-  (define-key python-mode-map (kbd "RET") 'newline-and-indent))
+  (autopair-mode)  
+  (define-key python-mode-map (kbd "RET") 'newline-and-indent)
+  (flymake-python-pyflakes-load))
 
 (setq-default py-shell-name "ipython")
 (setq-default py-which-bufname "IPython")
