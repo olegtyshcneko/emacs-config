@@ -15,6 +15,8 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/plugins")
 
+(global-rainbow-delimiters-mode)
+
 (require 'linum+)
 (setq linum-format "%d ")
 (global-linum-mode 1)
@@ -104,7 +106,8 @@
 (defun after-css-mode ()
   (emmet-mode)
   (auto-auto-indent-mode)
-  (autopair-mode))
+  (autopair-mode)
+  (rainbow-mode))
 
 (add-hook 'html-mode-hook 'after-html-mode)
 (add-hook 'css-mode-hook 'after-css-mode)
