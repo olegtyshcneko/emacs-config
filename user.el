@@ -10,8 +10,6 @@
 (setq backup-inhibited t)
 (setq auto-save-default nil)
 
-(set-default-font "Monaco-10")
-
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/plugins")
 
@@ -47,12 +45,17 @@
 
 (projectile-global-mode 1)
 
-(add-to-list 'load-path "~/.emacs.d/plugins/color-theme")
-(require 'color-theme)
-(color-theme-initialize)
-(setq color-theme-is-global t)
 
-(color-theme-clarity)
+;;Color themes:
+;(add-to-list 'load-path "~/.emacs.d/plugins/color-theme")
+;(require 'color-theme)
+;(color-theme-initialize)
+;(setq color-theme-is-global t)
+;(color-theme-clarity)
+(load-theme 'spacegray t)
+(set-default-font "Monaco-10")
+;;------------------------------------------
+
 
 (require 'litable)
 
@@ -128,6 +131,16 @@
 
 (add-hook 'python-mode-hook 'after-python-mode)
 ;;------------------------------------
+
+;;PHP configuration
+(require 'flymake-php)
+(defun after-php-mode ()
+  (flymake-php-load)
+  (auto-auto-indent-mode)
+  (autopair-mode))
+(add-hook 'php-mode-hook 'after-php-mode)
+;;----------------------------
+
 
 ;;Slime and common lisp configuration:
 (add-hook 'lisp-mode-hook 'after-cl-mode)
