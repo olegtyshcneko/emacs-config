@@ -156,3 +156,11 @@
 (require 'slime)
 (slime-setup)
 ;;-----------------------------------------------------------------
+
+
+;;Haskell configuration
+(defun after-haskell-mode ()
+  (structured-haskell-mode)  
+  (haskell-indent-mode))
+
+(add-hook 'haskell-mode-hook 'after-haskell-mode)

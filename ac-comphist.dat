@@ -1,4 +1,42 @@
-((("do" .
+((("toDigitsRev" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("doubledDigits" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("doubledSum" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("digits" .
+   [1 0 0 0 0 0])
+  ("validate" .
+   [0 0 1 0 0 0 0 0])
+  ("toDigits" .
+   [0 0 0 1 0 1 0 0])
+  ("sumDigit" .
+   [0 0 1 0 1 0 0 4])
+  ("length" .
+   [0 0 0 1 1 0])
+  ("doubleEveryOther" .
+   [0 0 0 4 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("after-haskell-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("haskell-indent-mode" .
+   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("i" .
+   [1])
+  ("haskell-flymake-init" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("structured-haskell-mode" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("haskell-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("center" .
+   [0 1 0 0 0 0])
+  ("text-align" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("auto" .
+   [0 0 1 0])
+  ("margin" .
+   [0 1 0 0 0 0])
+  ("do" .
    [1 0])
   ("elem" .
    [3 0 0 0])
@@ -163,7 +201,7 @@
   ("after-cl-mode" .
    [0 0 0 0 0 0 0 0 1 0 0 0 0])
   ("add-hook" .
-   [1 0 0 0 0 0 0 1])
+   [1 0 0 1 0 0 0 1])
   ("paredit-mode" .
    [0 0 0 0 1 0 0 0 0 0 0 0])
   ("autopair-mode" .
@@ -185,7 +223,7 @@
   ("*small*" .
    [0 0 0 2 0 1 0])
   ("defun" .
-   [8 0 0 0 0])
+   [9 0 0 0 0])
   ("guess-my-number" .
    [0 0 3 2 0 0 0 0 0 0 0 0 0 0 0])
   ("setf" .
@@ -267,4 +305,10 @@
   ("php-mode-hook" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0])
   ("after-php-mode" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])))
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("Integer" .
+   [0 0 6 0 0 0 0])
+  ("square" .
+   [4 0 0 1 0 0])
+  ("otherwise" .
+   [0 0 2 1 0 0 0 0 0])))
